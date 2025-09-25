@@ -2,21 +2,34 @@
 % Please edit documentation in R/Conformal_EQR.R
 \name{conformalize_Empirical}
 \alias{conformalize_Empirical}
-\title{Classical split conformalization procedure}
+\title{Classical split conformalization procedure with optional sample weights}
 \usage{
-conformalize_Empirical(s_cal, coverage_proba, verbose = 1)
+conformalize_Empirical(
+  s_cal,
+  coverage_proba,
+  obs_weights = NULL,
+  test_weight = NULL,
+  verbose = 1,
+  .pre_sorted = FALSE
+)
 }
 \arguments{
 \item{s_cal}{.}
 
 \item{coverage_proba}{.}
 
+\item{obs_weights}{.}
+
+\item{test_weight}{.}
+
 \item{verbose}{.}
+
+\item{.pre_sorted}{.}
 }
 \value{
 A named list containing the conformal correction \code{dQ} and a redundant \code{dQ_thresholds}.
 }
 \description{
-Classical split conformalization procedure
+Classical split conformalization procedure with optional sample weights
 }
 \keyword{internal}

@@ -2,7 +2,7 @@
 % Please edit documentation in R/Conformal_EQR.R
 \name{conformalize_GPD_boot}
 \alias{conformalize_GPD_boot}
-\title{GPD-boot conformalization procedure}
+\title{GPD-boot conformalization procedure with optional sample weights}
 \usage{
 conformalize_GPD_boot(
   s_cal,
@@ -10,7 +10,9 @@ conformalize_GPD_boot(
   alpha_profile,
   alpha_profile_qlvl,
   R = 1004,
-  verbose = 1
+  obs_weights = NULL,
+  verbose = 1,
+  .pre_sorted = FALSE
 )
 }
 \arguments{
@@ -24,13 +26,17 @@ conformalize_GPD_boot(
 
 \item{R}{.}
 
+\item{obs_weights}{.}
+
 \item{verbose}{.}
+
+\item{.pre_sorted}{.}
 }
 \value{
 A named list containing the conformal correction \code{dQ}, a redundant \code{dQ_thresholds},
 and placeholders for the estimated scale parameters \code{sigma} and shape parameters \code{xi} (currently set to NULL).
 }
 \description{
-GPD-boot conformalization procedure
+GPD-boot conformalization procedure with optional sample weights
 }
 \keyword{internal}

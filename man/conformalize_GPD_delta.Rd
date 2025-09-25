@@ -2,14 +2,16 @@
 % Please edit documentation in R/Conformal_EQR.R
 \name{conformalize_GPD_delta}
 \alias{conformalize_GPD_delta}
-\title{GPD-delta conformalization procedure}
+\title{GPD-delta conformalization procedure with optional sample weights}
 \usage{
 conformalize_GPD_delta(
   s_cal,
   threshold_lvls,
   alpha_profile,
   alpha_profile_qlvl,
-  verbose = 1
+  obs_weights = NULL,
+  verbose = 1,
+  .pre_sorted = FALSE
 )
 }
 \arguments{
@@ -21,13 +23,17 @@ conformalize_GPD_delta(
 
 \item{alpha_profile_qlvl}{.}
 
+\item{obs_weights}{.}
+
 \item{verbose}{.}
+
+\item{.pre_sorted}{.}
 }
 \value{
 A named list containing the conformal correction \code{dQ}, a redundant \code{dQ_thresholds},
 and placeholders for the estimated scale parameters \code{sigma} and shape parameters \code{xi} (currently set to NULL).
 }
 \description{
-GPD-delta conformalization procedure
+GPD-delta conformalization procedure with optional sample weights
 }
 \keyword{internal}

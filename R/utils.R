@@ -16,6 +16,28 @@ last_elem <- function(x){
   x[length(x)]
 }
 
+
+#' Mathematical number rounding
+#'
+#' @description This function rounds numbers in the mathematical sense,
+#' as opposed to the base `R` function [round()] that rounds 'to the even digit'.
+#'
+#' @param x Vector of numerical values to round.
+#' @param decimals Integer indicating the number of decimal places to be used.
+#'
+#' @return A vector containing the entries of `x`, rounded to `decimals` decimals.
+#'
+#' @keywords internal
+roundm = function(x, decimals=0){
+  # examples roundm(2.25, 1)
+  posneg <- sign(x)
+  z <- abs(x)*10^decimals
+  z <- z + 0.5 + sqrt(.Machine$double.eps)
+  z <- trunc(z)
+  z <- z/10^decimals
+  z*posneg
+}
+
 #' Verbose warnings handler
 #'
 #' @param msg .

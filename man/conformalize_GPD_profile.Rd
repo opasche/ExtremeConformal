@@ -2,7 +2,7 @@
 % Please edit documentation in R/Conformal_EQR.R
 \name{conformalize_GPD_profile}
 \alias{conformalize_GPD_profile}
-\title{GPD-profile conformalization procedure}
+\title{GPD-profile conformalization procedure with optional sample weights}
 \usage{
 conformalize_GPD_profile(
   s_cal,
@@ -15,7 +15,9 @@ conformalize_GPD_profile(
   tol = 0.001,
   steps_beyond_conf = 5,
   max_steps = 1000,
-  verbose = 1
+  obs_weights = NULL,
+  verbose = 1,
+  .pre_sorted = FALSE
 )
 }
 \arguments{
@@ -39,13 +41,17 @@ conformalize_GPD_profile(
 
 \item{max_steps}{.}
 
+\item{obs_weights}{.}
+
 \item{verbose}{.}
+
+\item{.pre_sorted}{.}
 }
 \value{
 A named list containing the conformal correction \code{dQ}, a redundant \code{dQ_thresholds},
 and placeholders for the estimated scale parameters \code{sigma} and shape parameters \code{xi} (currently set to NULL).
 }
 \description{
-GPD-profile conformalization procedure
+GPD-profile conformalization procedure with optional sample weights
 }
 \keyword{internal}

@@ -2,14 +2,16 @@
 % Please edit documentation in R/Conformal_EQR.R
 \name{conformalize_GPD_max}
 \alias{conformalize_GPD_max}
-\title{GPD-max conformalization procedure}
+\title{GPD-max conformalization procedure with optional sample weights}
 \usage{
 conformalize_GPD_max(
   s_cal,
   coverage_proba,
   threshold_lvls = NULL,
   min_obs_GPD = 10,
-  verbose = 1
+  obs_weights = NULL,
+  verbose = 1,
+  .pre_sorted = FALSE
 )
 }
 \arguments{
@@ -21,13 +23,17 @@ conformalize_GPD_max(
 
 \item{min_obs_GPD}{.}
 
+\item{obs_weights}{.}
+
 \item{verbose}{.}
+
+\item{.pre_sorted}{.}
 }
 \value{
 A named list containing the conformal correction \code{dQ}, the vector of \code{dQ_thresholds},
 the estimated scale parameters \code{sigma}, the estimated shape parameters \code{xi}, and the vector of effectively used thresholds \code{threshold_lvls}.
 }
 \description{
-GPD-max conformalization procedure
+GPD-max conformalization procedure with optional sample weights
 }
 \keyword{internal}

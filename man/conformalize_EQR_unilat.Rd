@@ -22,8 +22,11 @@ conformalize_EQR_unilat(
   profile_steps_beyond_conf = 5,
   profile_max_steps = 1000,
   alpha_profile_naive = 0.01,
+  obs_weights = NULL,
+  test_weight = NULL,
   return_q_list = FALSE,
-  verbose = 1
+  verbose = 1,
+  .pre_sorted_scores = NULL
 )
 }
 \arguments{
@@ -66,9 +69,17 @@ See \code{\link[ExtremeCI:GPD_profile_CI]{ExtremeCI::GPD_profile_CI()}} for more
 
 \item{alpha_profile_naive}{CI confidence level (i.e., the equivalent of \eqn{\alpha_2}) for the \code{'GPD_profile_naive'} method.}
 
+\item{obs_weights}{Optional vector of sample weights (same length as \code{y_calibr}), to perform weighted conformal prediction
+for nonexchangeable data (e.g. under distribution shift or drift).}
+
+\item{test_weight}{Weight of the test point for which the weighted conformal prediction is performed.
+Only necessary for the \code{'Empirical'} method if \code{obs_weights} is provided (defaults to \code{max(obs_weights)}).}
+
 \item{return_q_list}{Boolean indicating whether to return a debug quantile list.}
 
 \item{verbose}{Verbose level (0 for no messages, 1 for warnings, 2 for warnings duplicated as \code{\link[=cat]{cat()}} prints).}
+
+\item{.pre_sorted_scores}{(For development only.) If already computed: Vector of pre-sorted calibration nonconformity scores.}
 }
 \value{
 A named list containing the following elements.
@@ -85,6 +96,8 @@ A named list containing the following elements.
 The main function of this package, performing single-sided extreme conformal prediction from extreme quantile regression predictions.
 This function computes the conformal correction score-quantile \eqn{\hat{q}^{e}_{\alpha}} (or \eqn{\hat{q}_{\alpha}})
 to be added to the extreme quantile regression prediction(s) to obtain the desired PIs.
+It can optionally perform weighted conformal prediction for nonexchangeable data (e.g. under distribution shift or drift),
+by providing calibration-sample weights.
 }
 \details{
 The \code{method} argument specifies the conformalization method used to construct the (extreme) conformal prediction intervals (PIs).
