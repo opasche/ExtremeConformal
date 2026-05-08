@@ -8,7 +8,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/opasche/ExtremeConformal/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/opasche/ExtremeConformal/blob/v0.2.0/DESCRIPTION)
 
 Pasche OC (2026). *ExtremeConformal: Extreme Conformal Prediction
 Intervals*. R package version 0.2.0,
