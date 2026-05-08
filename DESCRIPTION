@@ -15,7 +15,7 @@ Description: This new extreme conformal prediction framework provides informativ
     to provide reliable and informative prediction intervals with high-confidence coverage,
     which can be constructed using any black-box extreme quantile regression method.
     A weighted version of the approach can account for nonstationary data.
-    The methodology was introduced in Pasche, Lam, and Engelke (2025) <doi:10.48550/arXiv.2505.08578>.
+    The methodology was introduced in Pasche, Lam, and Engelke (2026) <doi:10.1007/s10687-026-00536-9>.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
@@ -28,3 +28,5 @@ Imports:
 Remotes: 
     github::opasche/ExtremeCI
 Config/roxygen2/version: 8.0.0
+URL: https://github.com/opasche/ExtremeConformal
+BugReports: https://github.com/opasche/ExtremeConformal/issues

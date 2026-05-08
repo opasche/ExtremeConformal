@@ -17,9 +17,10 @@ wide, thus, uninformative prediction intervals. Our extreme conformal
 procedure bridges extreme value statistics and conformal prediction to
 provide reliable and informative prediction intervals with
 high-confidence coverage, which can be constructed using any black-box
-extreme quantile regression method. The methodology was introduced in
+extreme quantile regression method. A weighted version of the approach
+can account for nonstationary data. The methodology was introduced in
 [Pasche, Lam, and Engelke
-(2025)](https://doi.org/10.48550/arXiv.2505.08578)..
+(2026)](https://doi.org/10.1007/s10687-026-00536-9).
 
 ## Installation
 

@@ -72,10 +72,10 @@
 #'     Is likely to undercover, only use for comparison.}
 #'   \item{'Hill'}{(Not implemented) Extreme conformalization based on the Hill estimator from extreme value analysis.}
 #' }
-#' See Pasche et al. (2025), referenced below, for the technical details of extreme conformal prediction.
+#' See Pasche et al. (2026), referenced below, for the technical details of extreme conformal prediction.
 #'
 #' @references 
-#' Pasche, O. C., Lam, H., and Engelke, S. (2025). "Extreme Conformal Prediction: Reliable Intervals for High-Impact Events." *ArXiv Preprint*. \doi{doi:10.48550/arXiv.2505.08578}.
+#' Pasche, O. C., Lam, H., and Engelke, S. (2026). "Extreme Conformal Prediction: Reliable Intervals for High-Impact Events." *Extremes*. \doi{doi:10.1007/s10687-026-00536-9}.
 conformalize_EQR_unilat <- function(EQR_pred, y_calibr, coverage_proba=NULL, coverage_alpha=NULL,
                                     method = c('GPD_safeprofile','GPD_boot','GPD_profile','Empirical',
                                                'GPD_profile_naive','GPD_delta','GPD_max','GPD_simple','Hill'),
