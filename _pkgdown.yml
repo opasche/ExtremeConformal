@@ -1,4 +1,30 @@
-url: ~
+url: https://opasche.github.io/ExtremeConformal/
 template:
   bootstrap: 5
+  light-switch: yes
+reference:
+- title: Extreme conformalization
+  desc: The main function, performing the extreme conformalization procedure, to return
+    the score-quantile conformal correction to be added to the base extreme quantile
+    predictions.
+  contents: conformalize_EQR_unilat
+- title: Prediction helpers
+  desc: Helper functions, adding the pre-estimated score-quantile conformal correction
+    to extreme quantile predictions.
+  contents:
+  - conformal_PI_unilat
+  - block_weighted_conformal_PI_unilat
+- title: internal
+  contents:
+  - GPD_quantiles
+  - weighted_quantile
+  - weighted_quantiles
+  - conformalize_Empirical
+  - conformalize_GPD_max
+  - conformalize_GPD_boot
+  - conformalize_GPD_delta
+  - conformalize_GPD_profile
+  - last_elem
+  - roundm
+  - verb_warning
 

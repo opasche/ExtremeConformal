@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/opasche/ExtremeConformal/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/opasche/ExtremeConformal/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 This new extreme conformal prediction framework provides informative
