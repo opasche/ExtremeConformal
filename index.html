@@ -23,7 +23,7 @@
 
     <a class="navbar-brand me-2" href="index.html">ExtremeConformal</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.1</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,14 +60,19 @@
 </h1></div>
 <!-- badges: start -->
 
-<p>This new extreme conformal prediction framework provides informative prediction intervals at the high-confidence levels for which classical conformal methods fail. In applications with potentially high-impact events, a very high level of confidence is often required for predictions. If that level is too large relative to the amount of data used for calibration, classical conformal methods provide infinitely wide, thus, uninformative prediction intervals. Our extreme conformal procedure bridges extreme value statistics and conformal prediction to provide reliable and informative prediction intervals with high-confidence coverage, which can be constructed using any black-box extreme quantile regression method. A weighted version of the approach can account for nonstationary data. The methodology was introduced in <a href="https://doi.org/10.1007/s10687-026-00536-9" class="external-link">Pasche, Lam, and Engelke (2026)</a>.</p>
+<p>This new extreme conformal prediction framework provides informative prediction intervals at the high-confidence levels for which classical conformal methods fail. Conformal prediction is a popular method to construct prediction intervals with marginal coverage guarantees from black-box machine learning models. In applications with potentially high-impact events, a very high level of confidence is often required for predictions. If that level is too large relative to the amount of data used for calibration, classical conformal methods provide infinitely wide, thus, uninformative prediction intervals. Our extreme conformal procedure bridges extreme value statistics and conformal prediction to provide reliable and informative prediction intervals with high-confidence coverage, which can be constructed using any black-box extreme quantile regression method. A weighted version of the approach can account for nonstationary data. The methodology was introduced in <a href="https://doi.org/10.1007/s10687-026-00536-9" class="external-link">Pasche, Lam, and Engelke (2026)</a>.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>To install the development version of ExtremeConformal from R, run</p>
+<p>To install the development version of <code>ExtremeConformal</code>, in an R session, run</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"opasche/ExtremeConformal"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
+</h2>
+<p>Pasche, O. C., Lam, H., and Engelke, S. (2026). “Extreme Conformal Prediction: Reliable Intervals for High-Impact Events.” <em>Extremes</em>. <a href="https://doi.org/10.1007/s10687-026-00536-9" class="external-link">doi:10.1007/s10687-026-00536-9</a>.</p>
 <hr>
 <p>Package created by Olivier C. PASCHE<br>
 Research Institute for Statistics and Information Science,<br>

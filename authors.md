@@ -8,16 +8,16 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/opasche/ExtremeConformal/blob/v0.2.0/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/opasche/ExtremeConformal/blob/main/DESCRIPTION)
 
 Pasche OC (2026). *ExtremeConformal: Extreme Conformal Prediction
-Intervals*. R package version 0.2.0,
+Intervals*. R package version 0.2.1,
 <https://github.com/opasche/ExtremeConformal>.
 
     @Manual{,
       title = {ExtremeConformal: Extreme Conformal Prediction Intervals},
       author = {Olivier C. Pasche},
       year = {2026},
-      note = {R package version 0.2.0},
+      note = {R package version 0.2.1},
       url = {https://github.com/opasche/ExtremeConformal},
     }

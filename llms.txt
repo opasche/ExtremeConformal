@@ -2,13 +2,15 @@
 
 This new extreme conformal prediction framework provides informative
 prediction intervals at the high-confidence levels for which classical
-conformal methods fail. In applications with potentially high-impact
-events, a very high level of confidence is often required for
-predictions. If that level is too large relative to the amount of data
-used for calibration, classical conformal methods provide infinitely
-wide, thus, uninformative prediction intervals. Our extreme conformal
-procedure bridges extreme value statistics and conformal prediction to
-provide reliable and informative prediction intervals with
+conformal methods fail. Conformal prediction is a popular method to
+construct prediction intervals with marginal coverage guarantees from
+black-box machine learning models. In applications with potentially
+high-impact events, a very high level of confidence is often required
+for predictions. If that level is too large relative to the amount of
+data used for calibration, classical conformal methods provide
+infinitely wide, thus, uninformative prediction intervals. Our extreme
+conformal procedure bridges extreme value statistics and conformal
+prediction to provide reliable and informative prediction intervals with
 high-confidence coverage, which can be constructed using any black-box
 extreme quantile regression method. A weighted version of the approach
 can account for nonstationary data. The methodology was introduced in
@@ -17,13 +19,20 @@ can account for nonstationary data. The methodology was introduced in
 
 ## Installation
 
-To install the development version of ExtremeConformal from R, run
+To install the development version of `ExtremeConformal`, in an R
+session, run
 
 ``` r
 
 # install.packages("devtools")
 devtools::install_github("opasche/ExtremeConformal")
 ```
+
+## References
+
+Pasche, O. C., Lam, H., and Engelke, S. (2026). “Extreme Conformal
+Prediction: Reliable Intervals for High-Impact Events.” *Extremes*.
+[doi:10.1007/s10687-026-00536-9](https://doi.org/10.1007/s10687-026-00536-9).
 
 ------------------------------------------------------------------------
 
