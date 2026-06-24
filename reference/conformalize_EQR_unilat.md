@@ -253,6 +253,7 @@ extreme conformal prediction.
 ## References
 
 Pasche, O. C., Lam, H., and Engelke, S. (2026). "Extreme Conformal
-Prediction: Reliable Intervals for High-Impact Events." *Extremes*.
+Prediction: Reliable Intervals for High-Impact Events." *Extremes*
+29(2), 129–155.
 [doi:10.1007/s10687-026-00536-9](https://doi.org/10.1007/s10687-026-00536-9)
 .

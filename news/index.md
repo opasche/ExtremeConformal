@@ -1,5 +1,17 @@
 # Changelog
 
+## ExtremeConformal 0.2.2
+
+CRAN release: 2026-06-24
+
+- The ExtremeConformal R package has been accepted for publication on
+  the Comprehensive R Archive Network (CRAN)! It is now officially
+  released on <https://cran.r-project.org/package=ExtremeConformal>,
+  with
+  [doi:10.32614/CRAN.package.ExtremeConformal](https://doi.org/10.32614/CRAN.package.ExtremeConformal).
+  One can now install ExtremeConformal by simply calling
+  `install.packages("ExtremeConformal")` in R.
+
 ## ExtremeConformal 0.2.1
 
 - Dependencies update: the `ExtremeCI` R package has been [released on
