@@ -1,7 +1,7 @@
 Package: ExtremeConformal
 Type: Package
 Title: Extreme Conformal Prediction Intervals
-Version: 0.2.1
+Version: 0.2.2
 Authors@R: c(person(c("Olivier", "C."), "Pasche", 
                     email = "olivier_pasche@alumni.epfl.ch", role = c("aut", "cre", "cph"),
                     comment = c(ORCID = "0000-0002-1202-9199"))

@@ -123,5 +123,5 @@ Is likely to undercover, only use for comparison.}
 See Pasche et al. (2026), referenced below, for the technical details of extreme conformal prediction.
 }
 \references{
-Pasche, O. C., Lam, H., and Engelke, S. (2026). "Extreme Conformal Prediction: Reliable Intervals for High-Impact Events." \emph{Extremes}. \doi{doi:10.1007/s10687-026-00536-9}.
+Pasche, O. C., Lam, H., and Engelke, S. (2026). "Extreme Conformal Prediction: Reliable Intervals for High-Impact Events." \emph{Extremes} 29(2), 129–155. \doi{doi:10.1007/s10687-026-00536-9}.
 }
